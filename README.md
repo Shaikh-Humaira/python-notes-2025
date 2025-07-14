@@ -1,21 +1,23 @@
 # Python Basics Notes
 
-This repository contains Python notes and examples covering:
+This repository contains my Python notes and examples covering:
 
 ### 📘 Topics
 - Variables & Data Types
-- Operators (Arithmetic, Relational, Logical)
-- Conditional Statements (if, elif, else)
-- String Operations
+- Operators 
+- Conditional Statements
 - Type Conversion
+- String Operations
 - Practice Examples
 
 ### 🧠 Concepts
-- Input/Output using input() and print()
-- Data types: int, float, bool, str, None
-- Indexing and slicing
-- Logical flow using conditions
-- String functions: find(), count(), replace(), etc.
+- Input/Output using input() and print().
+- Data types: int, float, bool, str and None.
+- Variable Operators: Arithmetic, Relational, Assignment and Logical.
+- String Operators: Concatenations, length, Indexing and slicing.
+- String functions: Capitalize(), endswith() find(), count() and replace().
+- Logical flow using conditions.
+- if, elif, else-Syntax.
 
 ### 📂 Structure
 - 01_variables_and_operators/: Basics of Python syntax, types, and math
