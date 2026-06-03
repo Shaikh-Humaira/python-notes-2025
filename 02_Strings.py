@@ -1,42 +1,60 @@
 '''strings'''
 #(can use ',",""")
-str1 = "hi \n I name is Humaira! \t I am 17 yrs old." 
-str2 = "Apple"
-# \n is used for nxt line , \t is used for tab 
+#  Strings are sequences of characters enclosed in quotes
+#  Can be created using single, double, or triple quotes
+
+# Example string
+name = "Shaikh Humaira"
+str1 = '''This is
+a multi-line
+string.'''
+
+print(name)
 print(str1)
 
-"""string operations"""
-# 1. concatenation 
-print(str1 + str2) #ex hello + world = helloworld
+# Useful String Methods (it works for once only and does not make changes in original str)
+print("UPPERCASE:",name.upper())                            # UPPERCASE
+print("lowercase:",name.lower())                            # lowercase
+print("Title Case:",name.title())                           # Title Case
+print("Capitalize first letter:",name.capitalize())         # Capitalize first letter
+print("Index of first 'i':",name.find("i"))                 # 1st index of 1st occurence 'i'
+print("Count of 'a':",name.count("a"))                      # Count the occurrence of substr 'a'
+print("Replace all 'a' with '@':",name.replace("a", "@"))   # Replace all ccurrences of old with new ie 'a' with '@'
+print("Endswith:",name.endswith("ra"))                      # True if string ends with substr
+print("Startswith:",name.startswith("Sha"))                 # 
+print("Strip:",name.strip())                                # Remove whitespace
+print("Split:",name.split(" "))                             # Split by space into list
+print("   hello   ".strip())                                # 'hello'
 
-# 2. length 
-print(len(str2)) #length: counts all characters like space and digits
+# Escape Characters
+print("Hi \nMy name is Humaira! \t I am 17 yrs old." )
+#Line 1\nLine 2" nxt line
+#Column1\tColumn2" tab 
 
-# 3. indexing
-print(str2 [0]) #it starts with 0 and counts space too we can not change the value of string 
+# String Formatting
+# Method 1 - f-strings (recommended)
+age = 18
+print("My name is {name} and I am {age} years old.")
 
-# 4. slicing (accessing part of str)
-print("1:", str2[2 : 4]) #lastindex is not included
-print("2:", str2[ : 4]) #[0:4]
-print("3:", str2[2: ]) # empty space after colon is last str and can be written as [2:len(str2)]
-print("4:", str2[-3:-1]) # Negative indexing: start from right i.e e= -1
+# Method 2 - format()
+print("My name is {} and I am {} years old.".format(name, age))
 
-"""string Function""" 
-# (it works for once only and does not make changes in original str)
-#some useful str fuctions
-print("a:", str1.capitalize()) #capitalize first letter 
-print("b:", str1.endswith("old.")) #returns true if string ends with substr
-print("c:", str1.replace("i","H")) #replace all occurrences of old with new ie 'i' with 'H' 
-print("d:", str1.find("a")) #returns 1st index of 1st occurence
-#if word is absent in str output will be -1(as its doesn't exist in index except slicing)
-print("e:", str1.count("I")) #counts the occurrence of substr
+# Reverse a String
+original = "Humaira"
+reversed_str = original[::-1]
+print("Reversed:", reversed_str) #ariamuH
 
-"""Examples"""
-# 1. input user's first name and print its length
+#Excersize
+# Q1. input user's first name and print its length
 a = input("user's first name: ")
 print("length of first name :", len(a))
 
-# 2. find the occurance of $ in string.
+# Q2. find the occurance of $ in string.
 str = "$ value is greater than rps. $ is used in multiple countries. Hi $"
 print ("occurrence of $ in str:", str.count("$"))
+
+# Q3. input user's name and print it in uppercase and find vowels count in it.
+user_name = input("Enter your name: ")
+print("Name in uppercase:", user_name.upper())
+print("Vowel count:", sum(user_name.lower().count(v) for v in "aeiou"))
 
