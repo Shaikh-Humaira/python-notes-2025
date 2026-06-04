@@ -10,9 +10,10 @@ print(info)
 print(type(info))
 print(info[3])
 info[1] = 90
-print("Mutation:", info) #strings and tuples are immutable while lists are mutable(change value)
+print("Mutation:", info,"\n") #strings and tuples are immutable while lists are mutable(change value)
 
-"""list methods""" #they are used sperately for str and int 
+# list methods
+#they are used sperately for str and int 
 
 marks = [43, 54, 70]
 marks.append(55.6)              #adds one element at the end
@@ -28,13 +29,13 @@ print("5. Insert:", marks)
 marks.remove(70)                #removes first occurrence of element
 print("6. Remove:", marks)
 marks.pop( 2 )                  #removes element at index 
-print("7. Pop:", marks)
+print("7. Pop:", marks,"\n")
 
 # List Functions
 print("Max:", max(marks))
 print("Min:", min(marks))
 print("Sum:", sum(marks))
-print("Average:", sum(marks) / len(marks))
+print("Average:", sum(marks) / len(marks),"\n")
 
 # Checking presence
 print(70 in marks)              # True
@@ -51,7 +52,7 @@ for mark in marks:
 
 # Nested Lists
 matrix = [[1, 2], [3, 4], [5, 6]]
-print("Element at [1][1]:", matrix[1][1]) #first[]is for outer list & 2nd [] is for inner list
+print("Element at [1][1]:", matrix[1][1],"\n") #first[]is for outer list & 2nd [] is for inner list
 
 """Tuples"""
 # Tuples are ordered, immutable (unchangeable) collections.
@@ -62,33 +63,33 @@ t1 = (5,) # For Tuple with one element (comma is mandatory) without comma it is 
 print(type(t1))
 
 # Check existence
-print(5 in t1)     # True
-print(10 in t1)    # False
+print("Checking existence", 5 in t1)     # True
+print("Checking existence", 10 in t1)    # False
 
 # Nested tuple
 t2 = (1, 2, (3, 4), 5)
-print("Nested value:", t2[2][1])
+print("Nested value:", t2[2][1],"\n")
 
 # Excersizes:
 # Q1. create a tuple of 5 subjects and print each
 subjects = ("Math", "Python", "DBMS", "AI", "Statistics")
 for subject in subjects:
-    print("Subject:", subject)
+    print("Q1. Subject:", subject)
 
 # Q2. check if a list contains palindrome of elements 
 list1 = [1,2,3,2,1]
 list2 = list1.copy()
 list2.reverse()
 if (list1 == list2):
-    print("palindromic")
+    print("Q2. palindromic")
 else:
-    print("Not palindromic")
+    print("Q2. Not palindromic")
 
 # Q3. Count the number of student with the "A" grade in the following tuple
 grade1 = ["C", "D", "A", "A", "B", "B", "A"]
-print("A Grade Students:", grade1.count("A"))
+print("Q3. A Grade Students:", grade1.count("A"))
 grade1.sort()
-print("Sorted list:", grade1)
+print("Q3. Sorted list:", grade1)
 
 # Q4. ask the user to enter names of their 4 fav movies and store them in a list 
 mov1 = input("enter first favorate movie: ")
@@ -98,10 +99,10 @@ mov3 = input("enter third favorate movie: ")
 movies = [mov1, mov2] #1st method
 movies.append(mov3) #2nd method
 movies.append(input("enter fourth favorate movie: ")) #3rd method
-print(movies)
+print("Q4.", movies)
 
 # Q5. List of your favorite programming languages
 languages = ["Python", "C++", "JavaScript", "SQL"]
 print("Languages:", languages)
 for language in languages:
-    print("Language:", language)
+    print("Q5. Language:", language)
