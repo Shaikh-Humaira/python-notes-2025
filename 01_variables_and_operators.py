@@ -1,7 +1,7 @@
-# 1. Variables and data types
+# Variables and data types
 print (" hello, world! ")#string
 
-# 1.1 variable declarations
+# variable declarations
 #A variable is a name given to a memory location in a program
 
 Name= "Shaikh Humaira Mohd Aasim" #string
@@ -14,16 +14,16 @@ print("My name is", Name)
 print("I'm", age ,"years old")
 print("My DOB is", DOB)
 
-# 1.2 Data Type
+# Data Type
 print("Types:", type(age), type(DOB),type(Name))
 print(type(old),type(a))
 
-# 2. Type Functions
+# Type Functions
 a = float(1)
 print("Convert int to float:", a)
 print("Convert string to int:", int("10"))
 
-# 3. Comments
+# Comments
 #single line comment
 """
 this is a
@@ -31,15 +31,14 @@ this is a
 # To comment out multiple lines
 # ctrl + (/)
 
-# 4. Operators
+# Operators
 #An operator is a symbol that performs a certain operation between operands.
 # These work for: Strings, Lists, and Tuples
 b = 2 
 c = 3
 
-# 4.1 Arthematics operators
+#  Arthematics operators
 # (+,-.*,/,%,**)
-
 sum=b+c
 diff=b-c
 print(sum) #avoid using as it is a built-in function
@@ -54,7 +53,6 @@ print("Exponentiation:", b ** c) #b^c finds Power
 
 # Relational/Comparison Operators (==, !=, >, <, >=, <=)
 #(always give boolen value) 
-
 print("equal:", b == c)
 print("unequal:", b != c)
 print("greater than or equal:", b >= c)
@@ -62,12 +60,12 @@ print(" greather than :", b > c)
 print("greater than or equal:", b <= c)
 print(" greather than :", b < c) 
 
-# 4.3 Assignment operators 
+# Assignment operators 
 # (=, +=, -=, *=, /=, %=, **=)
 b += 10 # <= ex adds 10 to b
 print(b)
 
-# 4.4 logical operators 
+# logical operators 
 # (and, not, or )
 x = True
 y = False
@@ -77,22 +75,22 @@ print("OR:", x or y) #ans is true even if any one val is true
 print("NOT x:", not x) # not gives opp to what is true,always in boolens  
 print("or:", b == c or b > c) # direct evaluated in expression 
  
-# 5. TYPE CONVERSION
+# TYPE CONVERSION
 
-# 5.1 Automatic
+# Automatic
 d = 2
 e = 4.25
 print(d + e) #2.0 + 4.25 => 6.25 ie converts int into float
  # error if sum "2"+1
 
-# 5.2 Manual Casting
+# Manual Casting
 f = int("2") # to typecaste string having same data type, we use functions like int or float
 g = 4.25 
 print(f + g)
 
-# 6. Sequence Operators
+# Sequence Operators
 
-# 6.1 Concatenation (+)
+# Concatenation (+)
 # Joins two sequences of the same type
 str1 = "Hello"
 str2 = "World"
@@ -106,13 +104,13 @@ tuple1 = (5, 6)
 tuple2 = (7, 8)
 print("Tuple Concatenation:", tuple1 + tuple2)  # (5, 6, 7, 8)
 
-# 6.2 Length (len())
+# Length (len())
 # Returns the number of elements in a sequence
 print("Length of string:", len(str1))     # 5
 print("Length of list:", len(list1))      # 2
 print("Length of tuple:", len(tuple1))    # 2
 
-# 6.3 Indexing ([])
+# Indexing ([])
 # Accessing elements using position (0-based)
 print("First char in str:", str1[0])      # 'H'
 print("First item in list:", list1[0])    # 1
@@ -120,13 +118,13 @@ print("First item in tuple:", tuple1[0])  # 5
 print("Negative indexing:", str2[-3:-1]) # Negative indexing: start from right i.e e= -1
 #for multiple indicing it will consider start not the end
 
-# 6.4 Slicing ([start:end])
+# Slicing ([start:end])
 # Returns a subset (start included, end excluded)
 print("Slice of string:", str2[1:4])      # 'orl'
 print("Slice of list:", list2[0:2])       # [3, 4]
 print("Slice of tuple:", tuple2[0:2])     # (7, 8)
 
-# 6.5 Step Slicing ([start:end:step])
+# Step Slicing ([start:end:step])
 # Can use step to skip or reverse
 print("Every 2nd char:", str1[::2])       # 'Hlo'
 print("Reverse string:", str1[::-1])      # 'olleH'
@@ -136,37 +134,37 @@ print("'e' in str1:", 'e' in str1)        # True
 print(2 in list1)                         # True
 print(7 not in tuple1)                    # True
 
-# 6.7 Repetition (*)
+# Repetition (*)
 print("Repeat string:", str1 * 2)         # HelloHello
 print("Repeat list:", list1 * 2)          # [1, 2, 1, 2]
 print("Repeat tuple:", tuple1 * 3)        # (5, 6, 5, 6, 5, 6)
 
-# 7. Built-in Functions
+# Built-in Functions
 name = "Humaira"
 print("ASCII of first letter:", ord(name[0]))    # ord() = char to int
 print("Character of 97:", chr(97))               # chr() = int to char
 
-# 8. input
+# input
 name = input("enter your name:")
 print("welcome", name) # input is stored in the form of string only
 val = int(input("age:")) # to store it in diff form we have to mention it eg "int"
 print("age:", val)
 
-# 9. Excersize
-#Q1. input 2 numbers & print their sum.
+# Excersize
+# Q1. input 2 numbers & print their sum.
 a = int (input("1:"))
 b = int (input ("2:"))
 print("sum:", a + b)
 
-#Q2. input side of a square & print its area.
+# Q2. input side of a square & print its area.
 side = float (input("val:"))
 print("area=", side * side )
 
-#Q3. input 2 floating point numbers & print their average
+# Q3. input 2 floating point numbers & print their average
 a1 = float (input("num1:"))
 b1 = float (input("num2:"))
 print("average = ", (a1 + b1)/ 2 )
 
-#Q4. input 2 int numbers, a and b. 
+# Q4. input 2 int numbers, a and b. 
 # Print True if a is greater than or equal to b. If not print False.
 print(a1 >= b1)
