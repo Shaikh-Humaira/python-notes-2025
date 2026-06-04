@@ -8,9 +8,13 @@ name = "Shaikh Humaira"
 str1 = '''This is
 a multi-line
 string.'''
-
 print(name)
 print(str1)
+
+# Escape Characters
+print("Hi \nMy name is Humaira! \t I am 17 yrs old.","\n)
+#Line 1\nLine 2" nxt line
+#Column1\tColumn2" tab 
 
 # Useful String Methods (it works for once only and does not make changes in original str)
 print("UPPERCASE:",name.upper())                            # UPPERCASE
@@ -24,20 +28,12 @@ print("Endswith:",name.endswith("ra"))                      # True if string end
 print("Startswith:",name.startswith("Sha"))                 # 
 print("Strip:",name.strip())                                # Remove whitespace
 print("Split:",name.split(" "))                             # Split by space into list
-print("   hello   ".strip())                                # 'hello'
-
-# Escape Characters
-print("Hi \nMy name is Humaira! \t I am 17 yrs old." )
-#Line 1\nLine 2" nxt line
-#Column1\tColumn2" tab 
+print("   hello   ".strip(),"\n")                           # 'hello'
 
 # String Formatting
-# Method 1 - f-strings (recommended)
 age = 18
-print("My name is {name} and I am {age} years old.")
-
-# Method 2 - format()
-print("My name is {} and I am {} years old.".format(name, age))
+print("My name is {name} and I am {age} years old.") # Method 1(recommended)
+print("My name is {} and I am {} years old.".format(name, age)) # Method 2
 
 # Reverse a String
 original = "Humaira"
